@@ -1,0 +1,25 @@
+.circle {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+input {
+    margin-top: 20px;
+    padding: 5px;
+    color: #000;
+    border: 1px solid #000;
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    font-size: 16px;
+}
