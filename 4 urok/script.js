@@ -1,15 +1,16 @@
 let button = document.querySelector('.prize__button');
 let result = document.querySelector('.prize__result');
-let prize = document.getElementsByClassName('prize');
+let prize = document.querySelectorAll('.prize');
+
+let prizeNumber = [];
+
+let prizeNumberElements = document.querySelectorAll('.prize__number');
+
+for (let i = 0; i < prize.length; i++) {
+    prizeNumber.push(parseInt(prizeNumberElements[i].textContent));
+}
 
 function getCard() {
-    let prizeNumber = [];
-
-    for (let i = 0; i < prize.length; i++) {
-        let numberElement = prize[i].querySelector('.prize__number').textContent;
-        prizeNumber.push(parseInt(numberElement));
-    }
-
     let randomIndex = Math.floor(Math.random() * prizeNumber.length);
     let selectedPrize = prizeNumber[randomIndex];
 
